@@ -72,8 +72,10 @@ export default function Bmi() {
       }
     }
 
+    // รถติด
     priceTrafficJam = trafficjamTimeNum * 3;
 
+    // รวมทั้งหมด
     total = priceDistance + priceTrafficJam;
 
     setPricePerDistance(priceDistance.toFixed(2));
@@ -129,7 +131,7 @@ export default function Bmi() {
                 style={[
                   styles.button,
                   {
-                    backgroundColor: "#026f2f",
+                    backgroundColor: "#009788",
                     flex: 2,
                     marginRight: 10,
                   },
@@ -164,7 +166,7 @@ export default function Bmi() {
           </View>
           <View style={styles.cardResult}>
             <Text
-              style={[styles.textResult, { fontSize: 18, textAlign: "center" }]}
+              style={[styles.textResult, { fontSize: 14, textAlign: "center" }]}
             >
               ค่าโดยสารโดยประมาณ
             </Text>
@@ -172,7 +174,7 @@ export default function Bmi() {
               style={[
                 styles.textResult,
                 {
-                  fontSize: 42,
+                  fontSize: 60,
                   fontFamily: "Kanit_700Bold",
                   color: "#ffc72c",
                   textAlign: "center",
@@ -193,7 +195,7 @@ export default function Bmi() {
                 ค่าโดยสารตามระยะทาง
               </Text>
               <Text style={[styles.textResult, { fontSize: 14 }]}>
-                {pricePerDistance} บาท
+                {pricePerDistance} ฿
               </Text>
             </View>
             <View style={styles.row}>
@@ -201,7 +203,7 @@ export default function Bmi() {
                 ค่าโดยสารตามเวลาที่รถติด
               </Text>
               <Text style={[styles.textResult, { fontSize: 14 }]}>
-                {pricePerTrafficJam} บาท
+                {pricePerTrafficJam} ฿
               </Text>
             </View>
           </View>
@@ -216,7 +218,7 @@ export default function Bmi() {
               },
             ]}
           >
-            ID: 6652410021 {"\n"}NAME: Thanakorn Thongpriwan
+            ID: 6652410021 {"\n"}NAME: Thanakorn Thongpraiwan
           </Text>
         </View>
       </ScrollView>
@@ -226,7 +228,7 @@ export default function Bmi() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#eaeaea",
+    backgroundColor: "#F1F2F6",
     alignItems: "center",
     padding: 18,
   },
@@ -248,10 +250,6 @@ const styles = StyleSheet.create({
     borderRadius: 9,
     padding: 18,
     shadowColor: "#000",
-    shadowOffset: {
-      width: 0,
-      height: 2,
-    },
   },
   labelInput: {
     fontFamily: "Kanit_400Bold",
@@ -280,7 +278,7 @@ const styles = StyleSheet.create({
   cardResult: {
     marginTop: 18,
     width: "100%",
-    backgroundColor: "#2F3542",
+    backgroundColor: "#2F3543",
     borderRadius: 9,
     padding: 18,
     shadowColor: "#000",
@@ -291,8 +289,8 @@ const styles = StyleSheet.create({
   },
   textResult: {
     marginTop: 8,
-    fontFamily: "Kanit_700Bold",
-    color: "#ffffff",
+    fontFamily: "Kanit_400Bold",
+    color: "#b0b0b0",
   },
   row: {
     flexDirection: "row",
