@@ -39,16 +39,15 @@ export default function Index() {
             {
               fontSize: 12,
               marginBottom: 30,
-              color: "#00990a",
+              color: "#3D8D49",
               fontFamily: "Kanit_400Regular",
-              fontWeight: "400",
             },
           ]}
         >
           THAI FARE CALCULATOR
         </Text>
 
-        <FlowerLoader size={40} color="#00990a" />
+        <FlowerLoader size={30} color="#3D8D49" />
       </View>
       <View style={{ position: "absolute", bottom: 20 }}>
         <Text
@@ -61,7 +60,7 @@ export default function Index() {
             },
           ]}
         >
-          ID: 6652410021 {"\n"}NAME: Thanakorn Thongpriwan
+          ID: 6652410021 {"\n"}NAME: Thanakorn Thongpraiwan
         </Text>
       </View>
     </View>
@@ -77,7 +76,7 @@ const styles = StyleSheet.create({
   },
   container: {
     flex: 1,
-    backgroundColor: "#ffc72c",
+    backgroundColor: "#FED700",
     alignItems: "center",
     justifyContent: "center",
   },
